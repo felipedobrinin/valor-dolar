@@ -57,6 +57,7 @@ p,h1{
   font-size: 1.5rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 .swap{
@@ -66,6 +67,7 @@ p,h1{
   width: 3rem;
   border-radius: 0.5rem;
   padding: 0.5rem 0.5rem;
+  cursor: pointer;
 }
 .form{
   display: flex;
