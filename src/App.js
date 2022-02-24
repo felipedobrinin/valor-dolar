@@ -1,7 +1,6 @@
 import './styles/App.css';
 import './styles/Normalize.css';
 
-import Rate from './components/Rate';
 import Form from './components/Form';
 
 function App() {
