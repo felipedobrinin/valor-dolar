@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import getRate from '../services/Rate'
 
 export default function Form() {
 
-    const [rate,setRate] = useState(0);
+    const [rate,setRate] = useState("...");
     const [badge_1,setBadge_1] =  useState("USD");
     const [badge_2,setBadge_2] =  useState("UYU");
 
@@ -20,11 +20,15 @@ export default function Form() {
     }
 
     function displayRate(){
+        setRate("...");
         getRate(badge_1).then(resp => {
             setRate(resp.rates[badge_2]);
         });
     }
 
+    useEffect(()=>{
+        displayRate();
+    }, []);
 
     return (
         <div className="form" >
