@@ -20,7 +20,7 @@ export default function Form() {
     }
 
     function displayRate(){
-        setRate("...");
+        //setRate("...");
         getRate(badge_1).then(resp => {
             setRate(resp.rates[badge_2]);
         });
